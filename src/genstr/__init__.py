@@ -3,7 +3,8 @@ import itertools
 import sys
 import textwrap
 
-from genstr.utils import is_characters, is_pure_character
+from genstr.utils import is_characters
+from genstr.utils import is_pure_character
 from genstr.utils import Mode
 
 version = '0.1.1'
