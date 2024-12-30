@@ -49,7 +49,7 @@ print(type(list), list)
 | `alphabets` | str | 空 | 自定义组合字母表，mode 6/7/8 必填      
 | `prefix` | str | 空 | 组合前缀，如 -P a，则生成 a*
 | `suffix` | str | 空 | 组合后缀，如 -S z，则生成 *z
-| `is_range` | bool | False | 范围，如长度为 3 时，则范围为 1-3 内的数据
+| `is_range` | bool | False | 范围，如长度为 3 时，则范围长度为 1-3 内的数据`1~999`
 
 ## 仓库镜像
 

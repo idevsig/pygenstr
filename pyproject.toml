@@ -1,6 +1,6 @@
 [project]
 name = "genstr"
-version = "0.1.0"
+version = "0.1.1"
 description = "按指定规则生成字符串。"
 authors = [
     { name = "Jetsung Chan", email = "jetsungchan@gmail.com" }
@@ -34,16 +34,20 @@ Homepage = "https://git.jetsung.com/idev/pygenstr"
 Documentation = "https://framagit.org/idev/pygenstr"
 Repository = "https://framagit.org/idev/pygenstr.git"
 
+[project.scripts]
+genstr = "genstr:main"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "pytest>=8.3.4",
+]
 
 [tool.rye.scripts]
-tests = { cmd = "pytest" }
 check = { cmd = "ruff check . --fix" }
 
 [tool.hatch.metadata]
